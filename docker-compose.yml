@@ -1,0 +1,6 @@
+version: '3'
+services:
+  bot:
+    build-command: ./app:usr/node/src
+    user: node
+    command: init -y && npx tsc --init
